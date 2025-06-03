@@ -6,13 +6,12 @@ class seseorang {
     virtual void pesan() = 0;
     // virtual void pesn(){
     // cout << "pesan dari seseorang endl;"
-    //
     // }
 
 };
 class joko : public seseorang{
     public: 
-    void pesam() {
+    void pesan() {
         cout << "Pesan dari joko" << endl;
     }
 };
@@ -22,3 +21,18 @@ class lia: public seseorang {
         cout << "Pesan dari lia" << endl;
     }
 };
+int main() {
+    seseorang* obyek;
+    joko a;
+    lia b;
+
+    obyek = & a;
+    obyek->pesan();
+    obyek = &b;
+    obyek->pesan ();
+    a.seseorang ::pesan();
+    b.seseorang ::pesan();
+
+    return 0;
+
+}
