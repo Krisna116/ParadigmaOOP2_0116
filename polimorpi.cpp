@@ -10,3 +10,9 @@ class seseorang {
     // }
 
 };
+class joko : public seseorang{
+    public: 
+    void pesam() {
+        cout << "Pesan dari joko" << endl;
+    }
+};
